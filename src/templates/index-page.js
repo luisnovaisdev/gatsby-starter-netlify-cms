@@ -17,6 +17,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
+    {banners.map((banner) => (console.log(banner)))}
     <div
       className="full-width-image margin-top-0"
       style={{
