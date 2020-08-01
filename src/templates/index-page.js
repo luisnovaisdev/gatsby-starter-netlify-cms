@@ -7,6 +7,7 @@ import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
+  banners,
   image,
   title,
   heading,
@@ -15,6 +16,7 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
+  { banners.map((banner) => (banner.src); }
   <div>
     <div
       className="full-width-image margin-top-0"
@@ -115,6 +117,7 @@ export const IndexPageTemplate = ({
 )
 
 IndexPageTemplate.propTypes = {
+  banners: PropTypes.array,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -132,6 +135,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
+        banners={frontmatter.banners}
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -158,6 +162,7 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
+        banners
         title
         image {
           childImageSharp {
