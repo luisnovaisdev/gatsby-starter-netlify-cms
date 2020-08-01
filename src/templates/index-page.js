@@ -16,7 +16,6 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  { banners.map((banner) => (banner.src); }
   <div>
     <div
       className="full-width-image margin-top-0"
@@ -162,7 +161,6 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        banners
         title
         image {
           childImageSharp {
