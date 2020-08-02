@@ -7,6 +7,9 @@ banners:
   - title: Outro adicionado
     smallText: adicionado small text
     image: /img/blog-index.jpg
+weare:
+  - image: /img/264473-ja-ouviu-falar-no-sapato-loafer-descubra-agora-como-usalo-casualmente-1170x774-removebg-preview.png
+  - text: Ola mundo
 title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience

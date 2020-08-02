@@ -7,7 +7,12 @@ import Swiper from 'swiper';
 const Slider = ({sliderItems}) => {
 
   useEffect(() => {
+    new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
     
+    })
   })
 
   return (

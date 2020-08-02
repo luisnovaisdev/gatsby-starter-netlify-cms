@@ -12,6 +12,7 @@ import 'swiper/swiper-bundle.css';
 
 export const IndexPageTemplate = ({
   banners,
+  weare,
   image,
   title,
   heading,
@@ -22,7 +23,16 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <Slider sliderItems={banners} />
-    {console.log(banners)}
+
+    <div>
+      <div>
+        {weare.text}
+      </div>
+      <div>
+        <img src={!!weare.image.childImageSharp ? weare.image.childImageSharp.fluid.src : weare.image} alt=""/>
+      </div>
+    </div>
+    
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -123,6 +133,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   banners: PropTypes.array,
+  weare: PropTypes.object,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -141,6 +152,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         banners={frontmatter.banners}
+        weare={frontmatter.weare}
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -177,6 +189,16 @@ export const pageQuery = graphql`
           }
           smallText
           title
+        }
+        weare {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          text
         }
         title
         image {
