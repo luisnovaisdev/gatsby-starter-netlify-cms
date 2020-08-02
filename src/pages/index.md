@@ -7,6 +7,9 @@ banners:
   - image: /img/264473-ja-ouviu-falar-no-sapato-loafer-descubra-agora-como-usalo-casualmente-1170x774-removebg-preview.png
     smallText: Smalll text inserted
     title: Title changeded
+weare:
+  text: "What we are ? "
+  image: /img/chemex.jpg
 title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
