@@ -3,7 +3,10 @@ templateKey: index-page
 banners:
   - image: /img/264473-ja-ouviu-falar-no-sapato-loafer-descubra-agora-como-usalo-casualmente-1170x774-removebg-preview.png
     smallText: Smalll text inserted
-    title: Title inserted
+    title: Title changeded
+  - title: Outro adicionado
+    smallText: adicionado small text
+    image: /img/blog-index.jpg
 title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
