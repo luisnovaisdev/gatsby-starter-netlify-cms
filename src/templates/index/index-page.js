@@ -2,9 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import Layout from '../../components/Layout'
+import Features from '../../components/Features'
+import BlogRoll from '../../components/BlogRoll'
+import Slider from '../../components/Slider'
+
+import 'swiper/swiper-bundle.css';
+
 
 export const IndexPageTemplate = ({
   banners,
@@ -17,7 +21,8 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    {banners.map((banner) => (console.log(banner)))}
+    <Slider sliderItems={banners} />
+    {console.log(banners)}
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -160,7 +165,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "index/index-page" } }) {
       frontmatter {
         banners {
           image {

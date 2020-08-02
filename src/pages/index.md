@@ -1,5 +1,5 @@
 ---
-templateKey: index-page
+templateKey: index/index-page
 banners:
   - image: /img/264473-ja-ouviu-falar-no-sapato-loafer-descubra-agora-como-usalo-casualmente-1170x774-removebg-preview.png
     smallText: Smalll text inserted
