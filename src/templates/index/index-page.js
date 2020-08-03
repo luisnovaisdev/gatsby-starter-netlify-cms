@@ -9,6 +9,11 @@ import Slider from '../../components/Slider'
 
 import 'swiper/swiper-bundle.css';
 
+import {
+  WeAreContainer, 
+  WeAreText,
+  WeAreImageContainer} from './styles'
+
 
 export const IndexPageTemplate = ({
   banners,
@@ -24,14 +29,14 @@ export const IndexPageTemplate = ({
   <div>
     <Slider sliderItems={banners} />
 
-    <div>
-      <div>
+    <WeAreContainer>
+      <WeAreText>
         {weare.text}
-      </div>
-      <div>
+      </WeAreText>
+      <WeAreImageContainer>
         <img src={!!weare.image.childImageSharp ? weare.image.childImageSharp.fluid.src : weare.image} alt=""/>
-      </div>
-    </div>
+      </WeAreImageContainer>
+    </WeAreContainer>
     
     <div
       className="full-width-image margin-top-0"
@@ -182,7 +187,7 @@ export const pageQuery = graphql`
         banners {
           image {
             childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
+              fluid(maxWidth: 1920, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -193,7 +198,7 @@ export const pageQuery = graphql`
         weare {
           image {
             childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
+              fluid(maxWidth: 720, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }
