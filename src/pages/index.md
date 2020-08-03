@@ -8,10 +8,24 @@ banners:
     smallText: Smalll text inserted
     title: Title changeded
 weare:
-  text: "What we are ? "
+  text: >-
+    Outset International, an Outsourcing company with specialized professionals
+    covering several areas of the footwear industry with many years of
+    experience.
+
+
+    Outset team is composed of:
+
+    #Line builders
+
+    #Shoe technicians
+
+    #Commercial experts
+
+    #Admnistration
   image: /img/chemex.jpg
 title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
+image: /img/flavor_wheel.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
