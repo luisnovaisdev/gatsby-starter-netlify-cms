@@ -24,8 +24,8 @@ weare:
 
     #Admnistration
   image: /img/chemex.jpg
-title: Great coffee with a conscience
-image: /img/flavor_wheel.jpg
+title: We dont just build shoes, we build brands.
+image: /img/naom_5b33cbda645d3.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
