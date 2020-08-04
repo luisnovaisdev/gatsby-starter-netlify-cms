@@ -31,6 +31,7 @@ export const IndexPageTemplate = ({
 
     <WeAreContainer>
       <WeAreText>
+        <h2>We are</h2>
         {weare.text}
       </WeAreText>
       <WeAreImageContainer>
