@@ -28,3 +28,4 @@ export const WeAreImageContainer = styled.div`
 
 `;
 
+export const FixedBanner = styled.div``;

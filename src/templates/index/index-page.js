@@ -12,7 +12,9 @@ import 'swiper/swiper-bundle.css';
 import {
   WeAreContainer, 
   WeAreText,
-  WeAreImageContainer} from './styles'
+  WeAreImageContainer,
+  FixedBanner
+} from './styles'
 
 
 export const IndexPageTemplate = ({
@@ -21,7 +23,6 @@ export const IndexPageTemplate = ({
   image,
   title,
   heading,
-  subheading,
   mainpitch,
   description,
   intro,
@@ -39,7 +40,7 @@ export const IndexPageTemplate = ({
       </WeAreImageContainer>
     </WeAreContainer>
     
-    <div
+    <FixedBanner
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
@@ -72,21 +73,8 @@ export const IndexPageTemplate = ({
         >
           {title}
         </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading}
-        </h3>
       </div>
-    </div>
+    </FixedBanner>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -143,7 +131,6 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
-  subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
@@ -162,7 +149,6 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -215,7 +201,6 @@ export const pageQuery = graphql`
           }
         }
         heading
-        subheading
         mainpitch {
           title
           description
