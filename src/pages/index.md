@@ -49,6 +49,29 @@ whychooseus:
 
 
       Possibility of product sourcing in different producing countries other than Portugal due to our vast net of connections.
+  rightside:
+    image: /img/outset-6.png
+ourvision:
+  subTitle: OUR VISION
+  title: Due to the fast growing awareness from consumers around the world towards
+    sustainability, Outset wants to have a relevant position in this change, by
+    contributing in all possible ways, for a cleaner world and also by helping
+    to change some consuming habits that may contribute to a better tomorrow.
+  leftside:
+    title: This way Outset, is investing all efforts together with selected
+      suppliers of both raw material and the shoe itself.
+    description: >-
+      Aware of the recent climate changes around the globe, Outset is betting
+      strong in a more efficient and simple technique to build weatherproof
+      everyday footwear.
+
+
+      Dry Seal Tech is a trade mark of Outset with several technical steps that will allow our customers to transform everyday casual and fashion styles into functional all-weather shoes.
+
+
+      Knowing the importance given today to comfortable wear, our target in every product we build its to provide our shoes with the latest available components in this area.
+  rightside:
+    image: /img/outset7.png
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
