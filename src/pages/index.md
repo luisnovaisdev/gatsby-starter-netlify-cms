@@ -1,12 +1,7 @@
 ---
+heading: Great coffee with a conscience
+subheading: Support sustainable farming while enjoying a cup
 templateKey: index/index-page
-banners:
-  - title: Outro adicionado
-    smallText: adicionado small text
-    image: /img/blog-index.jpg
-  - image: /img/264473-ja-ouviu-falar-no-sapato-loafer-descubra-agora-como-usalo-casualmente-1170x774-removebg-preview.png
-    smallText: Smalll text inserted
-    title: Title changeded
 weare:
   text: >-
     Outset International, an Outsourcing company with specialized professionals
@@ -24,10 +19,6 @@ weare:
 
     #Admnistration
   image: /img/chemex.jpg
-title: We dont just build shoes, we build brands.
-image: /img/naom_5b33cbda645d3.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Why Kaldi
   description: >
@@ -35,6 +26,29 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
+banners:
+  - title: Outro adicionado
+    smallText: adicionado small text
+    image: /img/blog-index.jpg
+  - image: /img/264473-ja-ouviu-falar-no-sapato-loafer-descubra-agora-como-usalo-casualmente-1170x774-removebg-preview.png
+    smallText: Smalll text inserted
+    title: Title changeded
+title: We dont just build shoes, we build brands.
+image: /img/naom_5b33cbda645d3.jpg
+whychooseus:
+  subTitle: WHY CHOOSE US?
+  title: we dont just build shoes, we build brands.
+  leftside:
+    title: Over 25 years experience handling different markets and different types
+      of final product.
+    description: >-
+      Best service hand in hand with the best possible product/price relation.
+
+
+      Careful choice in production placement.
+
+
+      Possibility of product sourcing in different producing countries other than Portugal due to our vast net of connections.
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
