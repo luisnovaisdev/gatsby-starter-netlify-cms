@@ -10,7 +10,7 @@ export const SwiperWrapper = styled.div`
 
 export const SliderItem = styled.div`
   background-image: ${props => `url(${props.backgroundImage})` || ""};
-  height: 100vh;
+  height: calc(100vh - 97px);
   display: flex;
   align-items: center;
   justify-content: center;

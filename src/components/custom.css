@@ -1,0 +1,28 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar-item img{
+  max-height: unset;
+  width: auto;
+  
+}
+
+footer.footer{
+  padding: 0;
+}
+
+footer.footer .has-background-black {
+  padding: 15px 0px;
+  margin: 0!important;
+}
+
+@media(max-width: 600px){
+  .navbar-item img{
+    max-height: 60px;
+    width: auto!important;
+  }
+  .navbar-brand{
+    align-items: center;
+  }
+}
