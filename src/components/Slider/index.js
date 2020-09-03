@@ -14,6 +14,7 @@ import {
 const Slider = ({sliderItems}) => {
 
   useEffect(() => {
+    console.log('passou aqui');
     new Swiper('.swiper-container', {
       // Optional parameters
       direction: 'horizontal',
