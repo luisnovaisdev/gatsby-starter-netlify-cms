@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { IndexPageTemplate } from '../../templates/index/index-page'
 
 const IndexPagePreview = ({ entry, getAsset }) => {
+  console.log(entry.toJS())
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
