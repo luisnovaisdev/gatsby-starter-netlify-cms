@@ -15,11 +15,11 @@ publish_mode: editorial_workflow
 collections:
   - name: "pages"
     label: "Pages"
-    preview_path: pages/index/{{slug}}
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
         name: "index"
+        preview_path: pages/index
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index/index-page"}
           - {label: Banners, name: banners, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Small Text, name: smallText, widget: text}, {label: Title, name: title, widget: text}]}
